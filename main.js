@@ -38,22 +38,23 @@ function shortNamesOnly(names) {
   }
   return result;
 }
+// names[i] is a string that can be compared to a number
+// its a name[i] is a string
 
 function sNames(names) {
-  const result = [];
+  const newNames = [];
 
   for (let i = 0; i < names.length; i++) {
-    console.log(result);
-    if (names[i].upperCase + 'S') {
-      result.push(names[i]);
+    if (names[i][0] === 'S') {
+      newNames.push(names[i]);
     }
   }
-  return result;
+
+  return newNames;
 }
 
-
-
-
+// names[i][0] starts at index 0
+// if (name.startsWith('S'))
 
 
 
